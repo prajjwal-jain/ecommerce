@@ -28,7 +28,7 @@ const Profile = () => {
     e.preventDefault();
     try {
       const { data } = await axios.put(
-        "https://ecommerce-jjph.onrender.com/api/v1/auth/profile",
+        "https://ecommerce-p96d.onrender.com/api/v1/auth/profile",
         {
           name,
           email,

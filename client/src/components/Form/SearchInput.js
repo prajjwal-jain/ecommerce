@@ -12,7 +12,7 @@ const SearchInput = () => {
     e.preventDefault();
     try {
       const { data } = await axios.get(
-        `https://ecommerce-jjph.onrender.com/api/v1/product/search/${values.keyword}`
+        `https://ecommerce-p96d.onrender.com/api/v1/product/search/${values.keyword}`
       );
       setValues({ ...values, results: data });
       navigate("/search");

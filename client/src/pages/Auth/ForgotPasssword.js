@@ -17,7 +17,7 @@ const ForgotPasssword = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://ecommerce-jjph.onrender.com/api/v1/auth/forgot-password",
+        "https://ecommerce-p96d.onrender.com/api/v1/auth/forgot-password",
         {
           email,
           newPassword,

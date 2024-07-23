@@ -22,7 +22,7 @@ const CreateProduct = () => {
   const getAllCategory = async () => {
     try {
       const { data } = await axios.get(
-        "https://ecommerce-jjph.onrender.com/api/v1/category/get-category"
+        "https://ecommerce-p96d.onrender.com/api/v1/category/get-category"
       );
       if (data?.success) {
         setCategories(data?.category);
@@ -49,7 +49,7 @@ const CreateProduct = () => {
       productData.append("photo", photo);
       productData.append("category", category);
       const { data } = axios.post(
-        "https://ecommerce-jjph.onrender.com/api/v1/product/create-product",
+        "https://ecommerce-p96d.onrender.com/api/v1/product/create-product",
         productData
       );
       if (data?.success) {

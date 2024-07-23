@@ -49,7 +49,7 @@ const CartPage = () => {
   const getToken = async () => {
     try {
       const { data } = await axios.get(
-        "https://ecommerce-jjph.onrender.com/api/v1/product/braintree/token"
+        "https://ecommerce-p96d.onrender.com/api/v1/product/braintree/token"
       );
       setClientToken(data?.clientToken);
     } catch (error) {
@@ -66,7 +66,7 @@ const CartPage = () => {
       setLoading(true);
       const { nonce } = await instance.requestPaymentMethod();
       const { data } = await axios.post(
-        "https://ecommerce-jjph.onrender.com/api/v1/product/braintree/payment",
+        "https://ecommerce-p96d.onrender.com/api/v1/product/braintree/payment",
         {
           nonce,
           cart,
@@ -111,7 +111,7 @@ const CartPage = () => {
                 >
                   <div className="cart-img col-md-4">
                     <img
-                      src={`https://ecommerce-jjph.onrender.com/api/v1/product/product-photo/${p._id}`}
+                      src={`https://ecommerce-p96d.onrender.com/api/v1/product/product-photo/${p._id}`}
                       className="card-img-top"
                       alt={p.name}
                       width="100%"

@@ -20,7 +20,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://ecommerce-jjph.onrender.com/api/v1/auth/login",
+        "https://ecommerce-p96d.onrender.com/api/v1/auth/login",
         {
           email,
           password,

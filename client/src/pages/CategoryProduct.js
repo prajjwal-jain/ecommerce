@@ -15,7 +15,7 @@ const CategoryProduct = () => {
   const getPrductsByCat = async () => {
     try {
       const { data } = await axios.get(
-        `https://ecommerce-jjph.onrender.com/api/v1/product/product-category/${params.slug}`
+        `https://ecommerce-p96d.onrender.com/api/v1/product/product-category/${params.slug}`
       );
       setProducts(data?.products);
       setCategory(data?.category);
@@ -37,7 +37,7 @@ const CategoryProduct = () => {
               {products?.map((p) => (
                 <div className="card m-2" key={p._id}>
                   <img
-                    src={`https://ecommerce-jjph.onrender.com/api/v1/product/product-photo/${p._id}`}
+                    src={`https://ecommerce-p96d.onrender.com/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top"
                     alt={p.name}
                   />
